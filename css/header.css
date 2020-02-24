@@ -5,7 +5,7 @@ header {
 	grid-template-rows: auto;
 	grid-template-columns: auto 35rem auto;
 	grid-template-areas:
-		"search buttons location";
+		"search links location";
 	background-color: #20232A;
 	padding-left: 2rem;
 	padding-right: 2rem;
@@ -23,25 +23,29 @@ header > #search {
 	outline: none;
 	color: #999999;
 	text-align: left;
+	box-sizing: border-box;
 }
 
-header > #buttons {
-	grid-area: buttons;
+header > #links {
+	grid-area: links;
 	text-align: center;
 }
 
-#buttons > button {
+#links > button {
 	display: inline-block;
 	height: 100%;
 	margin: 0;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 	background-color: Transparent;
 	border: none;
 	font-size: 1.2rem;
 	color: #FFFFFF;
 	outline: none;
 	cursor: pointer;
+	box-sizing: border-box;
 }
 
 header > #location {
@@ -56,5 +60,6 @@ header > #location {
 	color: #FFFFFF;
 	outline: none;
 	text-align: right;
+	box-sizing: border-box;
 }
 
