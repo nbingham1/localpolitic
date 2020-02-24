@@ -1,0 +1,25 @@
+html {
+	font-size: 10pt;
+}
+
+body {
+	font-family: "Times New Roman", Times, serif;
+	hyphens: none;
+	margin: 0;
+}
+
+
+#app {
+	display: grid;
+	grid-template-rows: 4rem auto;
+	grid-template-columns: 0rem auto 13rem;
+	grid-template-areas:
+		"header header header"
+		". main nav";
+	grid-column-gap: 2rem;
+	grid-row-gap: 2rem;
+}
+
+main {
+	grid-area: main;
+}

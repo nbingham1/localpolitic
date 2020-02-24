@@ -1,0 +1,60 @@
+header {
+	grid-area: header;
+
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: auto 35rem auto;
+	grid-template-areas:
+		"search buttons location";
+	background-color: #20232A;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+header > #search {
+	grid-area: search;
+	height: 100%;
+	margin: 0;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	background-color: Transparent;
+	border: none;
+	font-size: 1.2rem;
+	outline: none;
+	color: #999999;
+	text-align: left;
+}
+
+header > #buttons {
+	grid-area: buttons;
+	text-align: center;
+}
+
+#buttons > button {
+	display: inline-block;
+	height: 100%;
+	margin: 0;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	background-color: Transparent;
+	border: none;
+	font-size: 1.2rem;
+	color: #FFFFFF;
+	outline: none;
+	cursor: pointer;
+}
+
+header > #location {
+	grid-area: location;
+	height: 100%;
+	margin: 0;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	background-color: Transparent;
+	border: none;
+	font-size: 1.2rem;
+	color: #FFFFFF;
+	outline: none;
+	text-align: right;
+}
+

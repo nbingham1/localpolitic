@@ -9,13 +9,16 @@ print(Document() << [
 		Head() << [
 			Meta(Charset="utf-8"),
 			Meta(Name="author", Content="Ned Bingham"),
+			Link(Rel="stylesheet", Type="text/css", Href="css/app.css"),
+			Link(Rel="stylesheet", Type="text/css", Href="css/header.css"),
+			Link(Rel="stylesheet", Type="text/css", Href="css/nav.css"),
 		],
 		Body() << [
-			Main(Id='app'), 
+			Div(Id='app'),
 			Script(Src="lib/react/react.js"),
 			Script(Src="lib/react/react-dom.js"),
-			Script(Src="js/app.js"),
-		]
+			Script(Src="js/app.js", Type="module"),
+		],
 	]
 ])
 
