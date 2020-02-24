@@ -17,6 +17,7 @@ print(Document() << [
 			Div(Id='app'),
 			Script(Src="lib/react/react.js"),
 			Script(Src="lib/react/react-dom.js"),
+			Script(Src="lib/axios/axios.js", SourceMappingURL="lib/axios/axios.map"),
 			Script(Src="js/app.js", Type="module"),
 		],
 	]
